@@ -88,8 +88,7 @@
 
 
 		// Set the transitions properties
-		//elementCloned.css('-webkit-transition-property', transitionProperty);
-		//elementCloned.style['-webkit-transition-duration'] = '500s';
+		elementCloned.className += ' se-height-transition ';
 
 
 		// Listen the scroll event
@@ -106,24 +105,11 @@
 
 				if (positionScrollNow > positionScrollBefore) {
 
-					if (!hasClassUpAnimation) {
-
-						elementCloned.className += ' se-height-transition ';
-						elementCloned.style.height = transitionStartValue +'px';
-
-						hasClassUpAnimation = true;
-					}
-
+					elementCloned.style.height = transitionStartValue +'px';
 
 				} else {
 
-					if (!hasClassDownAnimation) {
-
-						elementCloned.className += ' se-height-transition ';
-						elementCloned.style.height = transitionEndValue +'px';
-
-						hasClassDownAnimation = true;
-					}
+					elementCloned.style.height = transitionEndValue +'px';
 
 				}
 
