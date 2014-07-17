@@ -1,0 +1,135 @@
+/**
+* Base styles of the slug element component
+* @authors: ibarbieri
+* @description: this stylesheet is used in all of the slug element component. Some styles can remove them since they are for the demo version
+*/
+
+
+
+/* Reset and general
+---------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 0;
+    margin: 0 auto;
+    min-height: 1800px; /* For the demo version, remove to production */
+    font-family: 'Arial', sans-serif;
+}
+
+h1,
+h2,
+a {
+    margin: 0;
+    padding: 0 100px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 80px auto;
+}
+
+section h2 {
+    color: #333333;
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+    font-size: 44px;
+    font-weight: 300;
+}
+
+section h3 {
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+section p {
+    color: #666666;
+    font-size: 15px;
+    padding: 0 100px 50px 100px;
+}
+
+
+
+/* Main section
+---------------------------------------------------------------*/
+#main h1 {
+    color: #333333;
+    font-size: 60px;
+    margin-top: 90px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+#main h2 {
+    color: #333333;
+    font-size: 42px;
+    line-height: 38px;
+    letter-spacing: -1px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+
+
+/* Element cloned and fixed
+---------------------------------------------------------------*/
+.se-cloned-element {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.se-cloned-element[aria-hidden='true'] {
+    visibility: hidden;
+    display: none;
+}
+
+.se-cloned-element[aria-hidden='false'] {
+    visibility: visible;
+    display: block;
+}
+
+.se-element-to-fix {
+    padding: 0 0 0 100px;
+    height: 46px;
+    clear: both;
+    text-align: center;
+    background-color: #F7F7F7;
+    border-top: 1px solid #FFF;
+}
+
+.se-element-to-fix p {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+/* Transitions
+---------------------------------------------------------------*/
+.se-height-transition {
+     -webkit-transition: height 0.4s;
+     -moz-transition: height 0.4s;
+      -ms-transition: height 0.4s;
+       -o-transition: height 0.4s;
+          transition: height 0.4s;
+}
+

@@ -1,4 +1,4 @@
-slug-header
+Slug Header
 ===========
 
 Slug header on scroll up and down
