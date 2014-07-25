@@ -1,6 +1,6 @@
-
+UI Slug Element
 ===========
-UI Slug Element (Vanilla Javascript) | [View demo](http://ibarbieri.github.io/ui-slug_element/)
+Vanilla Javascript component | [View demo](http://ibarbieri.github.io/ui-slug_element/)
 
 You can fix an element when scroll down at determinated position and move it when scroll up.
 Customize it!!!
