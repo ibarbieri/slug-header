@@ -7,31 +7,26 @@
 <head>
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1"/>
 	<meta charset="utf-8"/>
-	<title>Slug Element</title>
-	<link rel="stylesheet" type="text/css" href="css/se-base.css">
+	<title>UI Slug Element</title>
+	<link rel="stylesheet" type="text/css" href="css/ui-slug_element.css">
+	<link rel="stylesheet" type="text/css" href="css/ui-slug_element_base.css">
 </head>
 <body>
 	<section id="main">
-
-		<h1><strong>Slug Element</strong></h1>
-		<h2>This is the slug element componenet</h2>
-		<p>You can stop an element when scroll down at determinated position and move it when scroll up. Customize it as you need</p>
-
-		<div class="se-element-to-fix">
-			<p>This element will be fixed and cloned</p>
-		</div>
-
-
-<!-- <div class="test" style="background-color:red; heigth:300px; width:400px;">
-		<a href="#">Comprar</a>
-	</div> -->
+		<h1><strong>UI Slug Element</strong></h1>
+		<h2>This is the slug element component</h2>
+		<p>You can fix an element when scroll down at determinated position and move it when scroll up. Customize it!!!</p>
 	</section>
 
-	<script src="https://a248.e.akamai.net/secure.mlstatic.com/org-img/ch/ui/0.13/chico-jquery.min.js"></script>
-	<script type="text/javascript" src="js/se-component.js"></script>
+	<div class="se-element-to-fix">
+		<p>This element will be fixed and cloned</p>
+	</div>
 
+
+	<script type="text/javascript" src="js/ui-slug_element_component.js"></script>
 	<script type="text/javascript">
 
+		// Instance of slugElement
 		var element = new SlugElement('se-element-to-fix', 'height', 46, 84);
 
 	</script>

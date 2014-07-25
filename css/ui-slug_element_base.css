@@ -1,9 +1,8 @@
 /**
-* Base styles of the slug element component
+* Base styles of the ui-slug element component
 * @authors: ibarbieri
-* @description: this stylesheet is used in all of the slug element component. Some styles can remove them since they are for the demo version
+* @description: this stylesheet is used in the demo version. Dosen't use it in you custom implementation.
 */
-
 
 
 /* Reset and general
@@ -86,31 +85,9 @@ section p {
 }
 
 
-
 /* Element cloned and fixed
 ---------------------------------------------------------------*/
-.se-cloned-element {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-}
-
-.se-cloned-element[aria-hidden='true'] {
-    visibility: hidden;
-    display: none;
-}
-
-.se-cloned-element[aria-hidden='false'] {
-    visibility: visible;
-    display: block;
-}
-
 .se-element-to-fix {
-    padding: 0 0 0 100px;
-    height: 46px;
-    clear: both;
     text-align: center;
     background-color: #F7F7F7;
     border-top: 1px solid #FFF;
@@ -120,16 +97,3 @@ section p {
     text-align: center;
     font-size: 14px;
 }
-
-
-
-/* Transitions
----------------------------------------------------------------*/
-.se-height-transition {
-     -webkit-transition: height 0.4s;
-     -moz-transition: height 0.4s;
-      -ms-transition: height 0.4s;
-       -o-transition: height 0.4s;
-          transition: height 0.4s;
-}
-
