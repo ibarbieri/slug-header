@@ -1,5 +1,5 @@
 /**
-* slugElement is a Javascript library to ...
+* ui-slug_element Vanilla Javascript library
 * @authors: ibarbieri
 * @description: this library support all browsers and is developed almost all in vanilla javascrip.
 */
@@ -128,6 +128,7 @@
 	 * this.checkElementFixedState();
 	 */
 	SlugElement.prototype.checkElementFixedState = function () {
+
 		//Get the top positions of the element (top, right, bottom, left)
 		elementTopPosition = elementToFix.getBoundingClientRect().top;
 
