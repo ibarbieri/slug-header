@@ -18,7 +18,7 @@
 body {
     min-width: 0;
     margin: 0 auto;
-    min-height: 1800px; /* For the demo version, remove to production */
+    min-height: 1800px;
     font-family: 'Arial', sans-serif;
 }
 

@@ -21,7 +21,9 @@
 		elementCloned,
 		on = (win.addEventListener !== undefined) ? 'addEventListener' : 'attachEvent',
         scrollEvent = (on === 'attachEvent') ? 'onscroll' : 'scroll',
-		positionScrollBefore = window.pageYOffset,
+		// Missing IE8 fix
+		positionScrollBefore = win.pageYOffset,
+		//positionScrollBefore = (win.pageYOffset !== undefined) ? win.pageYOffset : document.body.scrollTop,
 		positionScrollNow,
 		transitionProperty;
 
@@ -140,9 +142,10 @@
 
 		} else {
 
-			lastElementTopPosition = cloned.getBoundingClientRect().top + window.pageYOffset;
+			// Missing IE8 fix
+			lastElementTopPosition = cloned.getBoundingClientRect().top + win.pageYOffset;
 
-			if(lastElementTopPosition <= elementInitialTopPosition) {
+			if (lastElementTopPosition <= elementInitialTopPosition) {
 				cloned.setAttribute('aria-hidden', 'true');
 				isFixed = false;
 			}
